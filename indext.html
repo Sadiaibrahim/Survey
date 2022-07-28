@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
+    <title>Only Female Gym Survey</title>
+  </head>
+  <body>
+    <h1>GLL Better Female Gym Survey Form</h1>
+
+    <p>
+      Thank you for taking the time to help us improve female only facilities at
+      GLL.
+    </p>
+
+    <form>
+      <label for="firstName">First name:</label><br />
+      <input type="text" id="firstName" name="firstName" /><br />
+      <label for="lastName">Last name:</label><br />
+      <input type="text" id="lastName" name="lastName" />
+    </form>
+
+    <form class="email-address">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        name="email"
+      />
+    </form>
+    <div class="Age-group">
+      <p>Select your age group.</p>
+      <select id="dropdown" name="age-group" class="form-control" required="">
+        <option disabled="" selected="" value="">Age group</option>
+        <option value="age-group">18 to 24</option>
+        <option value=" age-group">25 to 29</option>
+        <option value=" age-group">30 to 34</option>
+        <option value=" age-group">35 to 39</option>
+        <option value=" age-group">40 to 44</option>
+        <option value=" age-group">45 to 49</option>
+        <option value="age-group">50 to 54</option>
+        <option value="age-group">55 to 59</option>
+        <option value="age-group">60 to 64</option>
+        <option value="age-group">65 to69</option>
+        <option value="age-group">70 to74</option>
+        <option value="age-group">75 to79</option>
+      </select>
+    </div>
+
+    <div class="membership-type">
+      <p>Select membership type.</p>
+      <label>
+        <input
+          name="membership-type"
+          value="Monthly"
+          type="radio"
+          class="input-radio"
+          checked=""
+        />
+        Monthly membership
+
+        <input
+          name="membership-type"
+          value="Student-membership"
+          type="radio"
+          class="input-radio"
+          checked=""
+        />
+        Student Membership
+
+        <input
+          name="membership-type"
+          value="Pay&Play-Membership"
+          type="radio"
+          class="input-radio"
+          checked=""
+        />
+        Pay & Play Membership
+
+        <input
+          name="membership-type"
+          value="Corporate-membership"
+          type="radio"
+          class="input-radio"
+          checked=""
+        />
+        Corporate Membership
+
+        <input
+          name="membership-type"
+          value="Day-pass"
+          type="radio"
+          class="input-radio"
+          checked=""
+        />
+        Day Pass
+
+      </label>
+    </div>
+    <div class="Gym-use">
+      <p>How often do you use the facility?</p>
+    </div>
+    <div class="gym-use">
+      <label for="option1">1-2 times a week</label>
+      <input type="checkbox" name="gym-use" id="gym-use">
+  </div>
+  <div class="gym-use">
+      <label for="option2">3-4 times a week</label>
+      <input type="checkbox" name="gym-use" id="gym-use">
+  </div>
+  <div class="gym-use">
+      <label for="option3">4-6 times a week</label>
+      <input type="checkbox" name="gym-use" id="gym-use">
+  </div>
+  
+  <div class="gym-use">
+      <label for="option4">6 + times a week</label>
+      <input type="checkbox" name="gym-use" id="gym-use">
+    </div>
+  
+  </form>
+  
+  <p> Which area do you use the most? <span class="popular-equipment"> (Check all that apply)</span>
+  </p>
+<input name="prefer" value="cardio-machines" type="checkbox" class="input-checkbox"> Cardio Machines
+<input name="prefer" value="free-weights" type="checkbox" class="input-checkbox"> Free Weights
+<input name="prefer" value="resistance-machines" type="checkbox" class="input-checkbox"> Resistance Machines
+<input name="prefer" value="fitness-classes" type="checkbox" class="input-checkbox"> Fitness Classes
+</div>
+
+<div class="Suggestions">
+  <p>Your feedback is important to us to improve our services</p>
+
+<label for="story"></label>
+
+<textarea id="story" name="story"
+  rows="5" cols="33">
+Enter your suggestions here...
+</textarea>
+
+</div>
+<label for="Survey"></label>
+<button type="submit">Submit</button>
+  </body>
+</html>
